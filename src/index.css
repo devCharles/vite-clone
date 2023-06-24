@@ -1,0 +1,144 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.86);
+  background-color: #1e1e20;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --text-color-secondary: rgba(235, 235, 245, 0.6);
+  --bg-color: #1e1e20;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 4rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 45% auto;
+}
+
+.header_article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header_h1 {
+  letter-spacing: -0.1px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.header_title {
+  background-image: linear-gradient(-20deg, #bd34fe 30%, #41d1ff);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header_text {
+  font-size: 56px;
+}
+
+.header_subtitle {
+  font-size: 24px;
+  color: var(--text-color-secondary);
+  font-weight: 500;
+  margin-top: 0;
+  line-height: 36px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 320px;
+  width: 320px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #252528;
+  border-radius: 10px;
+  padding: 24px;
+  gap: 1rem;
+}
+
+.card_title {
+  color: rgba(255, 255, 245, 0.86);
+  font-weight: 500;
+}
+
+.card_text {
+  color: rgba(255, 255, 245, 0.6);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2rem;
+}
+
+.card_emoji {
+  background-color: var(--bg-color);
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.button {
+  background-color: rgba(235, 235, 245, 0.05);
+  border: solid 1px rgba(235, 235, 245, 0.1);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button_primary {
+  background-color: #646cff;
+}
